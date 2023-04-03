@@ -5,25 +5,25 @@
       <![CDATA[Request completed]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-04-01T09:07:26 IST" name="Default suite" finished-at="2023-04-01T09:07:29 IST" duration-ms="2734">
+  <suite started-at="2023-04-01T10:30:56 IST" name="Default suite" finished-at="2023-04-01T10:30:58 IST" duration-ms="2816">
     <groups>
     </groups>
-    <test started-at="2023-04-01T09:07:26 IST" name="Default test" finished-at="2023-04-01T09:07:29 IST" duration-ms="2734">
-      <class name="gitHub.CRUDOOperations.UpdateRepoTest">
-        <test-method is-config="true" signature="methodConfig()[pri:0, instance:gitHub.CRUDOOperations.UpdateRepoTest@57cf54e1]" started-at="2023-04-01T09:07:26 IST" name="methodConfig" finished-at="2023-04-01T09:07:27 IST" duration-ms="531" status="PASS">
+    <test started-at="2023-04-01T10:30:56 IST" name="Default test" finished-at="2023-04-01T10:30:58 IST" duration-ms="2816">
+      <class name="gitHub.CRUDOOperations.DeleteRepoTest">
+        <test-method is-config="true" signature="methodConfig()[pri:0, instance:gitHub.CRUDOOperations.DeleteRepoTest@57cf54e1]" started-at="2023-04-01T10:30:56 IST" name="methodConfig" finished-at="2023-04-01T10:30:56 IST" duration-ms="580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodConfig -->
-        <test-method signature="upadteRepoTest()[pri:0, instance:gitHub.CRUDOOperations.UpdateRepoTest@57cf54e1]" started-at="2023-04-01T09:07:27 IST" name="upadteRepoTest" finished-at="2023-04-01T09:07:29 IST" duration-ms="2150" status="FAIL">
+        <test-method signature="deleterepoTest()[pri:0, instance:gitHub.CRUDOOperations.DeleteRepoTest@57cf54e1]" started-at="2023-04-01T10:30:56 IST" name="deleterepoTest" finished-at="2023-04-01T10:30:58 IST" duration-ms="2199" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
-Expected status code <200> but was <404>.
+Expected status code <204> but was <404>.
 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <404>.
+Expected status code <204> but was <404>.
 
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -69,7 +69,7 @@ at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
 at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-at gitHub.CRUDOOperations.UpdateRepoTest.upadteRepoTest(UpdateRepoTest.java:25)
+at gitHub.CRUDOOperations.DeleteRepoTest.deleterepoTest(DeleteRepoTest.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,15 +103,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- upadteRepoTest -->
-        <test-method is-config="true" signature="methodTearDown()[pri:0, instance:gitHub.CRUDOOperations.UpdateRepoTest@57cf54e1]" started-at="2023-04-01T09:07:29 IST" name="methodTearDown" finished-at="2023-04-01T09:07:29 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- deleterepoTest -->
+        <test-method is-config="true" signature="methodTearDown()[pri:0, instance:gitHub.CRUDOOperations.DeleteRepoTest@57cf54e1]" started-at="2023-04-01T10:30:58 IST" name="methodTearDown" finished-at="2023-04-01T10:30:58 IST" duration-ms="16" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Request completed]]>
             </line>
           </reporter-output>
         </test-method> <!-- methodTearDown -->
-      </class> <!-- gitHub.CRUDOOperations.UpdateRepoTest -->
+      </class> <!-- gitHub.CRUDOOperations.DeleteRepoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
